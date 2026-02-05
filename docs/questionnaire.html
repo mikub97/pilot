@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ocena fragmentów interakcji</title>
+    <meta http-equiv="Content-Language" content="pl" >
+    <meta charset="UTF-8" >
+    <script src="https://unpkg.com/jspsych@7.3.4"></script>
+    <script src="https://unpkg.com/@jspsych/plugin-html-keyboard-response@2.1.0"></script>
+    <script src="https://unpkg.com/@jspsych/plugin-video-keyboard-response@2.1.0"></script>
+    <script src="https://unpkg.com/@jspsych/plugin-html-slider-response@1.1.3"></script>
+    <script src="https://unpkg.com/@jspsych/plugin-survey-text@1.1.3"></script>
+    <link href="https://unpkg.com/jspsych@7.3.4/css/jspsych.css" rel="stylesheet" type="text/css" />
+    
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        overflow: auto;
+      }
+      
+      .jspsych-container {
+        max-width: 100%;
+        width: 100%;
+      }
+      
+      .jspsych-content {
+        max-width: 100%;
+        width: 100%;
+        padding: 10px;
+      }
+      
+      video {
+        /* Ensure the video never exceeds 100% of the container's width */
+        max-width: 100%; 
+        
+        /* CRITICAL: Ensure the video never exceeds 80% of the screen height */
+        max-height: 80vh; 
+        
+        /* Let the browser calculate the width automatically to keep aspect ratio */
+        width: auto; 
+        height: auto;
+        
+        /* Centering */
+        display: block;
+        margin: 0 auto;
+      }s      
+      .jspsych-video-keyboard-response-stimulus {
+        max-width: 100%;
+        height: auto;
+      }
+    </style>
+  
+    <script src="list_of_clips.js"></script>
+  </head>
+  <body></body>
+  <script src="timeline.js"></script>
+</html>
